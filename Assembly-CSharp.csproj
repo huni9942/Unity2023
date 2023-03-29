@@ -63,6 +63,7 @@
     <Compile Include="Assets\Scripts\BossController.cs" />
     <Compile Include="Assets\99. Resource\Yoge\ParallaxBackground 1\Scripts\Parallax.cs" />
     <Compile Include="Assets\99. Resource\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_AutoStopLoopedEffect.cs" />
+    <Compile Include="Assets\Twist.cs" />
     <Compile Include="Assets\99. Resource\Yoge\ParallaxBackground 1\Scripts\CameraMovement.cs" />
     <Compile Include="Assets\Scripts\UI\SidebarController.cs" />
     <Compile Include="Assets\99. Resource\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_RandomDir.cs" />
@@ -76,18 +77,18 @@
     <Compile Include="Assets\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\MyGizmo.cs" />
     <Compile Include="Assets\99. Resource\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_RotateCamera.cs" />
+    <Compile Include="Assets\DataManager.cs" />
     <Compile Include="Assets\Scripts\UI\EnemyHpBar.cs" />
     <Compile Include="Assets\Scripts\UI\PlayerHPBar.cs" />
     <Compile Include="Assets\99. Resource\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_RandomDirectionTranslate.cs" />
     <Compile Include="Assets\Scripts\EnemyManager.cs" />
     <Compile Include="Assets\Scripts\ScrollUI.cs" />
+    <Compile Include="Assets\BulletPattern.cs" />
     <Compile Include="Assets\99. Resource\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_Translate.cs" />
     <Compile Include="Assets\99. Resource\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_New.cs" />
     <Compile Include="Assets\Scripts\EnemyController.cs" />
     <Compile Include="Assets\99. Resource\JMO Assets\Cartoon FX (legacy)\Scripts\CFX_LightFlicker.cs" />
-    <Compile Include="Assets\Twist.cs" />
-    <Compile Include="Assets\DataManager.cs" />
-    <Compile Include="Assets\BulletPattern.cs" />
+    <Compile Include="Assets\Test.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

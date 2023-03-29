@@ -66,4 +66,10 @@ public class ScrollUI : MonoBehaviour
             yield return null;
         }
     }
+
+    public void Update()
+    {
+        if(Input.GetKey(KeyCode.End))
+        Destroy(this.gameObject);
+    }
 }

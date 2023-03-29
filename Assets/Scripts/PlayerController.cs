@@ -166,6 +166,7 @@ public class PlayerController : MonoBehaviour
             // ** 피격
             OnHit();
 
+
         // ** 플레이의 움직임에 따라 이동 모션을 실행 한다.
         animator.SetFloat("Speed", Hor);
     }
@@ -194,7 +195,7 @@ public class PlayerController : MonoBehaviour
         SpriteRenderer buleltRenderer = Obj.GetComponent<SpriteRenderer>();
 
         // ** 총알의 이미지 반전 상태를 플레이어의 이미지 반전 상태로 설정한다.
-        buleltRenderer.flipY = playerRenderer.flipX;
+        buleltRenderer.flipX = playerRenderer.flipX;
 
         // ** 모든 설정이 종료되었다면 저장소에 보관한다.
         Bullets.Add(Obj);
