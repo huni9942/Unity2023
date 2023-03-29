@@ -56,19 +56,35 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\FX\Scripts\CFX_LightIntensityFade.cs" />
     <Compile Include="Assets\99. Resource\JMO Assets\Cartoon FX (legacy)\Scripts\CFX_AutoRotate.cs" />
-    <Compile Include="Assets\99. Resource\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_New.cs" />
-    <Compile Include="Assets\99. Resource\Yoge\ParallaxBackground 1\Scripts\CameraMovement.cs" />
+    <Compile Include="Assets\99. Resource\Yoge\ParallaxBackground 1\Scripts\Parallax.cs" />
     <Compile Include="Assets\99. Resource\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_AutoStopLoopedEffect.cs" />
-    <Compile Include="Assets\99. Resource\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_RotateCamera.cs" />
+    <Compile Include="Assets\99. Resource\Yoge\ParallaxBackground 1\Scripts\CameraMovement.cs" />
     <Compile Include="Assets\99. Resource\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_RandomDir.cs" />
     <Compile Include="Assets\99. Resource\_Heathen Engineering\Samples\UX Examples\Flat Icons [Free]\ToggleSetAnimatorBoolean.cs" />
-    <Compile Include="Assets\99. Resource\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_Translate.cs" />
-    <Compile Include="Assets\99. Resource\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_RandomDirectionTranslate.cs" />
-    <Compile Include="Assets\99. Resource\Yoge\ParallaxBackground 1\Scripts\Parallax.cs" />
-    <Compile Include="Assets\99. Resource\JMO Assets\Cartoon FX (legacy)\Scripts\CFX_LightFlicker.cs" />
     <Compile Include="Assets\FX\Scripts\CFX_AutoDestructShuriken.cs" />
-    <Compile Include="Assets\FX\Scripts\CFX_LightIntensityFade.cs" />
+    <Compile Include="Assets\99. Resource\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_RotateCamera.cs" />
+    <Compile Include="Assets\99. Resource\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_RandomDirectionTranslate.cs" />
+    <Compile Include="Assets\99. Resource\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_Translate.cs" />
+    <Compile Include="Assets\99. Resource\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_New.cs" />
+    <Compile Include="Assets\99. Resource\JMO Assets\Cartoon FX (legacy)\Scripts\CFX_LightFlicker.cs" />
+    <Compile Include="Assets\Scripts\BossController.cs" />
+    <Compile Include="Assets\Scripts\BackGroundController.cs" />
+    <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\ButtonController.cs" />
+    <Compile Include="Assets\Scripts\BulletControll.cs" />
+    <Compile Include="Assets\Scripts\UI\UiController.cs" />
+    <Compile Include="Assets\Scripts\MyGizmo.cs" />
+    <Compile Include="Assets\Scripts\BulletController.cs" />
+    <Compile Include="Assets\Scripts\EnemyController.cs" />
+    <Compile Include="Assets\Scripts\ScrollUI.cs" />
+    <Compile Include="Assets\Scripts\UI\SidebarController.cs" />
+    <Compile Include="Assets\Scripts\UI\EnemyHpBar.cs" />
+    <Compile Include="Assets\Scripts\UI\PlayerHPBar.cs" />
+    <Compile Include="Assets\Scripts\CameraController.cs" />
+    <Compile Include="Assets\Scripts\EnemyManager.cs" />
+    <Compile Include="Assets\Scripts\ControllerManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\99. Resource\JMO Assets\Cartoon FX (legacy)\Shaders\CFX3 Multiply Color.shader" />
@@ -718,9 +734,6 @@
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.VisualScripting.Shared.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
@@ -732,9 +745,6 @@
     </Reference>
     <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model">
       <HintPath>Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Timeline.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
       <HintPath>Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
@@ -757,9 +767,6 @@
     <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection">
       <HintPath>Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.VisualScripting.Flow">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
     </Reference>
@@ -772,14 +779,11 @@
     <Reference Include="Unity.PlasticSCM.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.TestTools.CodeCoverage.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.VisualScripting.State">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
+    <Reference Include="Unity.VisualScripting.Flow">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Core">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
@@ -787,15 +791,35 @@
     <Reference Include="Unity.EditorCoroutines.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.VisualScripting.Shared.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TestTools.CodeCoverage.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.State">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="ToonyColorsPro.Demo.Editor.csproj">
       <Project>{B1548235-1987-C135-AA0D-5B845B353EC1}</Project>
       <Name>ToonyColorsPro.Demo.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="KinoBloom.Runtime.csproj">
+      <Project>{24D061E1-D11F-6F73-44DA-DED0978345FC}</Project>
+      <Name>KinoBloom.Runtime</Name>
+    </ProjectReference>
     <ProjectReference Include="CFXREditor.csproj">
       <Project>{BCDA2DE7-0A81-5491-E224-CEDF684E8032}</Project>
       <Name>CFXREditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="CFXRDemo.csproj">
+      <Project>{606D4B1B-C2CD-D772-CD16-CC21063D12E9}</Project>
+      <Name>CFXRDemo</Name>
     </ProjectReference>
     <ProjectReference Include="CFXR.WelcomeScreen.csproj">
       <Project>{54887D32-C7B7-5D59-A02B-6E721EFF2293}</Project>
@@ -804,14 +828,6 @@
     <ProjectReference Include="CFXRRuntime.csproj">
       <Project>{DC47D36D-6376-D582-9326-AB627726BE32}</Project>
       <Name>CFXRRuntime</Name>
-    </ProjectReference>
-    <ProjectReference Include="KinoBloom.Runtime.csproj">
-      <Project>{24D061E1-D11F-6F73-44DA-DED0978345FC}</Project>
-      <Name>KinoBloom.Runtime</Name>
-    </ProjectReference>
-    <ProjectReference Include="CFXRDemo.csproj">
-      <Project>{606D4B1B-C2CD-D772-CD16-CC21063D12E9}</Project>
-      <Name>CFXRDemo</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
